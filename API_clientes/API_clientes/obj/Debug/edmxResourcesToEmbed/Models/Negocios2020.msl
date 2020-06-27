@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Negocios2020ModelStoreContainer" CdmEntityContainer="Negocios2020Entities">
+    <EntitySetMapping Name="categorias">
+      <EntityTypeMapping TypeName="Negocios2020Model.categorias">
+        <MappingFragment StoreEntitySet="categorias">
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="productos">
+      <EntityTypeMapping TypeName="Negocios2020Model.productos">
+        <MappingFragment StoreEntitySet="productos">
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="NomProducto" ColumnName="NomProducto" />
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="CantxUnidad" ColumnName="CantxUnidad" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="UnidadesEnExistencia" ColumnName="UnidadesEnExistencia" />
+          <ScalarProperty Name="UnidadesEnPedido" ColumnName="UnidadesEnPedido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="proveedores">
+      <EntityTypeMapping TypeName="Negocios2020Model.proveedores">
+        <MappingFragment StoreEntitySet="proveedores">
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="NomProveedor" ColumnName="NomProveedor" />
+          <ScalarProperty Name="DirProveedor" ColumnName="DirProveedor" />
+          <ScalarProperty Name="NomContacto" ColumnName="NomContacto" />
+          <ScalarProperty Name="CargoContacto" ColumnName="CargoContacto" />
+          <ScalarProperty Name="idpais" ColumnName="idpais" />
+          <ScalarProperty Name="fonoProveedor" ColumnName="fonoProveedor" />
+          <ScalarProperty Name="FaxProveedor" ColumnName="FaxProveedor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargos">
+      <EntityTypeMapping TypeName="Negocios2020Model.Cargos">
+        <MappingFragment StoreEntitySet="Cargos">
+          <ScalarProperty Name="idcargo" ColumnName="idcargo" />
+          <ScalarProperty Name="desCargo" ColumnName="desCargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Distritos">
+      <EntityTypeMapping TypeName="Negocios2020Model.Distritos">
+        <MappingFragment StoreEntitySet="Distritos">
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="nomDistrito" ColumnName="nomDistrito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="empleados">
+      <EntityTypeMapping TypeName="Negocios2020Model.empleados">
+        <MappingFragment StoreEntitySet="empleados">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="ApeEmpleado" ColumnName="ApeEmpleado" />
+          <ScalarProperty Name="NomEmpleado" ColumnName="NomEmpleado" />
+          <ScalarProperty Name="FecNac" ColumnName="FecNac" />
+          <ScalarProperty Name="DirEmpleado" ColumnName="DirEmpleado" />
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="fonoEmpleado" ColumnName="fonoEmpleado" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="FecContrata" ColumnName="FecContrata" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="Negocios2020Model.clientes">
+        <MappingFragment StoreEntitySet="clientes">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="NomCliente" ColumnName="NomCliente" />
+          <ScalarProperty Name="DirCliente" ColumnName="DirCliente" />
+          <ScalarProperty Name="idpais" ColumnName="idpais" />
+          <ScalarProperty Name="fonoCliente" ColumnName="fonoCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paises">
+      <EntityTypeMapping TypeName="Negocios2020Model.paises">
+        <MappingFragment StoreEntitySet="paises">
+          <ScalarProperty Name="Idpais" ColumnName="Idpais" />
+          <ScalarProperty Name="NombrePais" ColumnName="NombrePais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pedidoscabe">
+      <EntityTypeMapping TypeName="Negocios2020Model.pedidoscabe">
+        <MappingFragment StoreEntitySet="pedidoscabe">
+          <ScalarProperty Name="IdPedido" ColumnName="IdPedido" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="FechaPedido" ColumnName="FechaPedido" />
+          <ScalarProperty Name="FechaEntrega" ColumnName="FechaEntrega" />
+          <ScalarProperty Name="FechaEnvio" ColumnName="FechaEnvio" />
+          <ScalarProperty Name="EnvioPedido" ColumnName="EnvioPedido" />
+          <ScalarProperty Name="CantidaPedido" ColumnName="CantidaPedido" />
+          <ScalarProperty Name="Destinatario" ColumnName="Destinatario" />
+          <ScalarProperty Name="DirDestinatario" ColumnName="DirDestinatario" />
+          <ScalarProperty Name="CiuDestinatario" ColumnName="CiuDestinatario" />
+          <ScalarProperty Name="RefDestnatario" ColumnName="RefDestnatario" />
+          <ScalarProperty Name="DepDestinatario" ColumnName="DepDestinatario" />
+          <ScalarProperty Name="PaiDestinatario" ColumnName="PaiDestinatario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pedidosdeta">
+      <EntityTypeMapping TypeName="Negocios2020Model.pedidosdeta">
+        <MappingFragment StoreEntitySet="pedidosdeta">
+          <ScalarProperty Name="IdPedido" ColumnName="IdPedido" />
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="relacionvista">
+      <EntityTypeMapping TypeName="Negocios2020Model.relacionvista">
+        <MappingFragment StoreEntitySet="relacionvista">
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="NomProducto" ColumnName="NomProducto" />
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="CantxUnidad" ColumnName="CantxUnidad" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="UnidadesEnExistencia" ColumnName="UnidadesEnExistencia" />
+          <ScalarProperty Name="UnidadesEnPedido" ColumnName="UnidadesEnPedido" />
+          <ScalarProperty Name="NomProveedor" ColumnName="NomProveedor" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_Cargo_Listar" FunctionName="Negocios2020Model.Store.usp_Cargo_Listar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2020Model.usp_Cargo_Listar_Result">
+          <ScalarProperty Name="idcargo" ColumnName="idcargo" />
+          <ScalarProperty Name="desCargo" ColumnName="desCargo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_CargosListar" FunctionName="Negocios2020Model.Store.usp_CargosListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2020Model.usp_CargosListar_Result">
+          <ScalarProperty Name="idcargo" ColumnName="idcargo" />
+          <ScalarProperty Name="desCargo" ColumnName="desCargo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Datos_Empleado" FunctionName="Negocios2020Model.Store.usp_Datos_Empleado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2020Model.usp_Datos_Empleado_Result">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="ApeEmpleado" ColumnName="ApeEmpleado" />
+          <ScalarProperty Name="NomEmpleado" ColumnName="NomEmpleado" />
+          <ScalarProperty Name="FecNac" ColumnName="FecNac" />
+          <ScalarProperty Name="DirEmpleado" ColumnName="DirEmpleado" />
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="fonoEmpleado" ColumnName="fonoEmpleado" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="FecContrata" ColumnName="FecContrata" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Distrito_Listar" FunctionName="Negocios2020Model.Store.usp_Distrito_Listar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2020Model.usp_Distrito_Listar_Result">
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="nomDistrito" ColumnName="nomDistrito" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_DistritoListar" FunctionName="Negocios2020Model.Store.usp_DistritoListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2020Model.usp_DistritoListar_Result">
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="nomDistrito" ColumnName="nomDistrito" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Eliminar_Empleado" FunctionName="Negocios2020Model.Store.usp_Eliminar_Empleado" />
+    <FunctionImportMapping FunctionImportName="usp_Empleado_Listar" FunctionName="Negocios2020Model.Store.usp_Empleado_Listar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2020Model.usp_Empleado_Listar_Result">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="ApeEmpleado" ColumnName="ApeEmpleado" />
+          <ScalarProperty Name="NomEmpleado" ColumnName="NomEmpleado" />
+          <ScalarProperty Name="FecNac" ColumnName="FecNac" />
+          <ScalarProperty Name="DirEmpleado" ColumnName="DirEmpleado" />
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="fonoEmpleado" ColumnName="fonoEmpleado" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="FecContrata" ColumnName="FecContrata" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_EmpleadoListar" FunctionName="Negocios2020Model.Store.usp_EmpleadoListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2020Model.usp_EmpleadoListar_Result">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="ApeEmpleado" ColumnName="ApeEmpleado" />
+          <ScalarProperty Name="NomEmpleado" ColumnName="NomEmpleado" />
+          <ScalarProperty Name="FecNac" ColumnName="FecNac" />
+          <ScalarProperty Name="DirEmpleado" ColumnName="DirEmpleado" />
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="fonoEmpleado" ColumnName="fonoEmpleado" />
+          <ScalarProperty Name="idcargo" ColumnName="idcargo" />
+          <ScalarProperty Name="FecContrata" ColumnName="FecContrata" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Insertar_Empleado" FunctionName="Negocios2020Model.Store.usp_Insertar_Empleado" />
+    <FunctionImportMapping FunctionImportName="usp_ProductoListar" FunctionName="Negocios2020Model.Store.usp_ProductoListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2020Model.usp_ProductoListar_Result">
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="NomProducto" ColumnName="NomProducto" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+          <ScalarProperty Name="NomProveedor" ColumnName="NomProveedor" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
